@@ -9,7 +9,7 @@ sap.ui.define([
 
 		return BaseController.extend("ibm.tlp.controller.Detail", {
 
-			formatter: formatter,
+			formatter: formatter, 
 
 			/* =========================================================== */
 			/* lifecycle methods                                           */
