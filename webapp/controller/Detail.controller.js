@@ -3,7 +3,7 @@ sap.ui.define([
 		"ibm/tlp/controller/BaseController",
 		"sap/ui/model/json/JSONModel",
 		"sap/ui/model/odata/v2/ODataModel",
-		"ibm/tlp/model/formatter"
+		"ibm/tlp/model/formatter" 
 	], function (BaseController, JSONModel, oDataModel, formatter) {
 		"use strict";
 
