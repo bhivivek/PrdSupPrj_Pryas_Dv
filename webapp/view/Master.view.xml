@@ -8,7 +8,7 @@
 	<semantic:MasterPage
 		id="idMasterPage"
 		title="{masterView>/title}"
-		navButtonPress="onNavBack"
+		navButtonPress="onNavBack" 
 		showNavButton="true">
 		<semantic:subHeader>
 			<Bar id="headerBar">
