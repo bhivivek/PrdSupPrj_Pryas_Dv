@@ -147,7 +147,7 @@ sap.ui.define([
 				//call /To_Supplier
 				debugger;
 				//var oDataModelNew = new oDataModel("/sap/opu/odata/sap/Z_MERA_FIORI_FAL_SPLITAPP_SRV/");
-				var oDataModel = new oDataModel("/sap/opu/odata/sap/Z_MERA_FIORI_FAL_SPLITAPP_SRV/");
+				var oDataModel = new sap.ui.model.oData.oDataModel("/sap/opu/odata/sap/Z_MERA_FIORI_FAL_SPLITAPP_SRV/");
 				var that = this;
 				var sObjDetPath = ( sObjectPath + "/To_Supplier" );	
 				oDataModel.read(sObjDetPath, {    
