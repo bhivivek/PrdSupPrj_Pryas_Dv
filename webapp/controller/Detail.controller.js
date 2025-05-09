@@ -2,7 +2,6 @@
 sap.ui.define([
 		"ibm/tlp/controller/BaseController",
 		"sap/ui/model/json/JSONModel",
-		"sap/ui/model/odata/v2/ODataModel",
 		"ibm/tlp/model/formatter" 
 	], function (BaseController, JSONModel, oDataModel, formatter) {
 		"use strict";
@@ -78,7 +77,7 @@ sap.ui.define([
 				var sTitle,
 				iTotalItems = oEvent.getParameter("total"),
 				oViewModel = this.getModel("detailView");
-
+				debugger;
 				if (this.byId("lineItemsList").getBinding("items").isLengthfinal()) {
 					if(iTotalItems) {
 						sTitle = this.getResourceBundle().getText("detailLineItemTableHeadingCount", [iTotalItems]);
@@ -112,6 +111,7 @@ sap.ui.define([
 					var sObjectPath = this.getModel().createKey("ProductSet", {
 						ProductId :  sObjectId
 					});
+					debugger;
 					this._bindView("/" + sObjectPath);
 				}.bind(this));
 			},
@@ -146,10 +146,11 @@ sap.ui.define([
 
 				//call /To_Supplier
 				debugger;
-				var oDataModelNew = new oDataModel("http://localhost:8081/http://vpavs900.vetropack.corporate.ads:8000/sap/opu/odata/sap/Z_MERA_FIORI_FAL_SPLITAPP_SRV/");
+				//var oDataModelNew = new oDataModel("/sap/opu/odata/sap/Z_MERA_FIORI_FAL_SPLITAPP_SRV/");
+				var oDataModel = new oDataModel("/sap/opu/odata/sap/Z_MERA_FIORI_FAL_SPLITAPP_SRV/");
 				var that = this;
 				var sObjDetPath = ( sObjectPath + "/To_Supplier" );	
-				oDataModelNew.read(sObjDetPath, {
+				oDataModel.read(sObjDetPath, {    
 					success: function(oData, response){
 						debugger;
 						var olocalJSONModel = that.getView().getModel("detailView");

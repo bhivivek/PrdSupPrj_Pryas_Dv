@@ -10,8 +10,9 @@ server:
         ignoreCertError: false
         backend:
           - path: /sap
-            url: http://vpavs900.vetropack.corporate.ads:8000
+            url: http://vpavd910.vetropack.corporate.ads:44300
             client: '100'
+            destination: ERP_EMBEDDED_D91_100
         ui5:
           path:
             - /resources

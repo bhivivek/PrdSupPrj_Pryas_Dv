@@ -11,7 +11,7 @@
         },
         "dataSources": {
             "mainService": {
-                "uri": "http://localhost:8081/http://vpavs900.vetropack.corporate.ads:8000/sap/opu/odata/sap/Z_MERA_FIORI_FAL_SPLITAPP_SRV/",
+                "uri": "/sap/opu/odata/sap/Z_MERA_FIORI_FAL_SPLITAPP_SRV/",
                 "type": "OData",
                 "settings": {
                     "odataVersion": "2.0",
